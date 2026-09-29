@@ -1,0 +1,8 @@
+# UnrealBloomPass: LuminosityHighPassShader (ShaderMaterial)
+tiers high medium ultra
+name post_highpass
+vertex custom/luminosity_high_pass.vert
+fragment custom/luminosity_high_pass.frag
+param shaderType ShaderMaterial
+param shaderName
+param opaque

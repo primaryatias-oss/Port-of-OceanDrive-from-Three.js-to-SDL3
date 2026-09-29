@@ -1,0 +1,1800 @@
+{
+ "query": "shot=1",
+ "errors": [],
+ "programs": [
+  {
+   "id": "000",
+   "name": "SkyEnv",
+   "draws": 6,
+   "vsLines": 76,
+   "fsLines": 265,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "001",
+   "name": "PMREM.Background",
+   "draws": 6,
+   "vsLines": 560,
+   "fsLines": 547,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "002",
+   "name": "PMREMGGXConvolution",
+   "draws": 20,
+   "vsLines": 87,
+   "fsLines": 257,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "003",
+   "name": "Sky",
+   "draws": 27,
+   "vsLines": 78,
+   "fsLines": 267,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/Mesh",
+     "obj": "Mesh",
+     "mat": "ShaderMaterial",
+     "name": "Sky",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "004",
+   "name": "",
+   "draws": 27,
+   "vsLines": 644,
+   "fsLines": 2172,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/placeholders/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.vertexShader = shader.vertexShader .replace('#include <common>', '#include <common>\\nvarying vec2 vLwP;') .replace('#includ"
+    }
+   ]
+  },
+  {
+   "id": "005",
+   "name": "",
+   "draws": 272,
+   "vsLines": 642,
+   "fsLines": 2145,
+   "users": 32,
+   "examples": [
+    {
+     "path": "Scene/placeholders/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/placeholders/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "006",
+   "name": "",
+   "draws": 27,
+   "vsLines": 642,
+   "fsLines": 2146,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/placeholders/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <aomap_fragment>', `#include <aomap_fragment> reflectedLight.indirectDiffuse *= 2.2;`);"
+    }
+   ]
+  },
+  {
+   "id": "007",
+   "name": "",
+   "draws": 54,
+   "vsLines": 651,
+   "fsLines": 2192,
+   "users": 2,
+   "examples": [
+    {
+     "path": "Scene/placeholders/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.vertexShader = shader.vertexShader .replace('#include <common>', '#include <common>\\nattribute vec4 aBg;\\nvarying vec4 vBg;\\nvary"
+    },
+    {
+     "path": "Scene/placeholders/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.vertexShader = shader.vertexShader .replace('#include <common>', '#include <common>\\nattribute vec4 aBg;\\nvarying vec4 vBg;\\nvary"
+    }
+   ]
+  },
+  {
+   "id": "008",
+   "name": "",
+   "draws": 251,
+   "vsLines": 646,
+   "fsLines": 2254,
+   "users": 17,
+   "examples": [
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.vertexShader = shader.vertexShader .replace('#include <common>', '#include <common>\\nattribute vec4 aWin;\\nflat varying vec4 vWin"
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.vertexShader = shader.vertexShader .replace('#include <common>', '#include <common>\\nattribute vec4 aWin;\\nflat varying vec4 vWin"
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.vertexShader = shader.vertexShader .replace('#include <common>', '#include <common>\\nattribute vec4 aWin;\\nflat varying vec4 vWin"
+    }
+   ]
+  },
+  {
+   "id": "009",
+   "name": "",
+   "draws": 251,
+   "vsLines": 644,
+   "fsLines": 2148,
+   "users": 17,
+   "examples": [
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.vertexShader = shader.vertexShader .replace('#include <common>', '#include <common>\\nvarying float vRD;') .replace('#"
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.vertexShader = shader.vertexShader .replace('#include <common>', '#include <common>\\nvarying float vRD;') .replace('#"
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.vertexShader = shader.vertexShader .replace('#include <common>', '#include <common>\\nvarying float vRD;') .replace('#"
+    }
+   ]
+  },
+  {
+   "id": "010",
+   "name": "",
+   "draws": 251,
+   "vsLines": 645,
+   "fsLines": 2149,
+   "users": 17,
+   "examples": [
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.vertexShader = shader.vertexShader .replace('#include <common>', '#include <common>\\nvarying float vRD;') .replace('#"
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.vertexShader = shader.vertexShader .replace('#include <common>', '#include <common>\\nvarying float vRD;') .replace('#"
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.vertexShader = shader.vertexShader .replace('#include <common>', '#include <common>\\nvarying float vRD;') .replace('#"
+    }
+   ]
+  },
+  {
+   "id": "011",
+   "name": "",
+   "draws": 251,
+   "vsLines": 657,
+   "fsLines": 2262,
+   "users": 17,
+   "examples": [
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.vertexShader = shader.vertexShader .replace('#include <common>', '#include <common>\\nattribute vec3 aW;\\nattribute vec3 aE;\\nattr"
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.vertexShader = shader.vertexShader .replace('#include <common>', '#include <common>\\nattribute vec3 aW;\\nattribute vec3 aE;\\nattr"
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.vertexShader = shader.vertexShader .replace('#include <common>', '#include <common>\\nattribute vec3 aW;\\nattribute vec3 aE;\\nattr"
+    }
+   ]
+  },
+  {
+   "id": "012",
+   "name": "",
+   "draws": 251,
+   "vsLines": 645,
+   "fsLines": 2148,
+   "users": 17,
+   "examples": [
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "013",
+   "name": "",
+   "draws": 294,
+   "vsLines": 641,
+   "fsLines": 2145,
+   "users": 44,
+   "examples": [
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "014",
+   "name": "",
+   "draws": 76,
+   "vsLines": 566,
+   "fsLines": 548,
+   "users": 17,
+   "examples": [
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshBasicMaterial",
+     "name": "",
+     "patch": "(s) => { s.vertexShader = s.vertexShader.replace('#include <begin_vertex>', '#include <begin_vertex>\\ntransformed += -normal * 0.05 + vec3(0.0, -0"
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshBasicMaterial",
+     "name": "",
+     "patch": "(s) => { s.vertexShader = s.vertexShader.replace('#include <begin_vertex>', '#include <begin_vertex>\\ntransformed += -normal * 0.05 + vec3(0.0, -0"
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshBasicMaterial",
+     "name": "",
+     "patch": "(s) => { s.vertexShader = s.vertexShader.replace('#include <begin_vertex>', '#include <begin_vertex>\\ntransformed += -normal * 0.05 + vec3(0.0, -0"
+    }
+   ]
+  },
+  {
+   "id": "015",
+   "name": "",
+   "draws": 73,
+   "vsLines": 643,
+   "fsLines": 2149,
+   "users": 15,
+   "examples": [
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.fragmentShader = shader.fragmentShader.replace('#include <color_fragment>', ` diffuseColor.a *= min(vColor.r * 1.4, 0.9); /"
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.fragmentShader = shader.fragmentShader.replace('#include <color_fragment>', ` diffuseColor.a *= min(vColor.r * 1.4, 0.9); /"
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.fragmentShader = shader.fragmentShader.replace('#include <color_fragment>', ` diffuseColor.a *= min(vColor.r * 1.4, 0.9); /"
+    }
+   ]
+  },
+  {
+   "id": "016",
+   "name": "",
+   "draws": 111,
+   "vsLines": 644,
+   "fsLines": 2151,
+   "users": 7,
+   "examples": [
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.fragmentShader = shader.fragmentShader .replace('#include <map_fragment>', ` vec4 odTx = texture2D(map, vMapUv); "
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.fragmentShader = shader.fragmentShader .replace('#include <map_fragment>', ` vec4 odTx = texture2D(map, vMapUv); "
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.fragmentShader = shader.fragmentShader .replace('#include <map_fragment>', ` vec4 odTx = texture2D(map, vMapUv); "
+    }
+   ]
+  },
+  {
+   "id": "017",
+   "name": "",
+   "draws": 281,
+   "vsLines": 642,
+   "fsLines": 2145,
+   "users": 39,
+   "examples": [
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "018",
+   "name": "",
+   "draws": 32,
+   "vsLines": 643,
+   "fsLines": 2150,
+   "users": 4,
+   "examples": [
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.fragmentShader = shader.fragmentShader.replace('#include <aomap_fragment>', `#include <aomap_fragment> #ifdef USE_FOG "
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.fragmentShader = shader.fragmentShader.replace('#include <aomap_fragment>', `#include <aomap_fragment> #ifdef USE_FOG "
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.fragmentShader = shader.fragmentShader.replace('#include <aomap_fragment>', `#include <aomap_fragment> #ifdef USE_FOG "
+    }
+   ]
+  },
+  {
+   "id": "019",
+   "name": "",
+   "draws": 61,
+   "vsLines": 645,
+   "fsLines": 2148,
+   "users": 7,
+   "examples": [
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "020",
+   "name": "",
+   "draws": 61,
+   "vsLines": 645,
+   "fsLines": 2150,
+   "users": 7,
+   "examples": [
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.fragmentShader = shader.fragmentShader.replace('#include <aomap_fragment>', `#include <aomap_fragment> reflectedLight.directD"
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.fragmentShader = shader.fragmentShader.replace('#include <aomap_fragment>', `#include <aomap_fragment> reflectedLight.directD"
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.fragmentShader = shader.fragmentShader.replace('#include <aomap_fragment>', `#include <aomap_fragment> reflectedLight.directD"
+    }
+   ]
+  },
+  {
+   "id": "021",
+   "name": "",
+   "draws": 59,
+   "vsLines": 641,
+   "fsLines": 2144,
+   "users": 6,
+   "examples": [
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/hotels/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "022",
+   "name": "",
+   "draws": 0,
+   "vsLines": 656,
+   "fsLines": 2149,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/palms/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.uniforms.odWindT = WIND; shader.vertexShader = shader.vertexShader .replace('#include <common>', `#include <common>\\n${SWAY_G"
+    }
+   ]
+  },
+  {
+   "id": "023",
+   "name": "",
+   "draws": 0,
+   "vsLines": 660,
+   "fsLines": 2195,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/palms/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.uniforms.odWindT = WIND; shader.vertexShader = shader.vertexShader .replace('#include <common>', `#include <common>\\n${SWAY_G"
+    }
+   ]
+  },
+  {
+   "id": "024",
+   "name": "",
+   "draws": 27,
+   "vsLines": 645,
+   "fsLines": 2144,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/palms/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.vertexShader = s.vertexShader .replace('#include <common>', '#include <common>\\nattribute float aKind;') .replace('#include <uv_verte"
+    }
+   ]
+  },
+  {
+   "id": "025",
+   "name": "",
+   "draws": 54,
+   "vsLines": 647,
+   "fsLines": 2179,
+   "users": 2,
+   "examples": [
+    {
+     "path": "Scene/street/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.uniforms.odMacro = { value: macro }; s.vertexShader = s.vertexShader .replace('#include <common>', '#include <common>\\nvarying vec3 vOd"
+    },
+    {
+     "path": "Scene/street/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.uniforms.odMacro = { value: macro }; s.vertexShader = s.vertexShader .replace('#include <common>', '#include <common>\\nvarying vec3 vOd"
+    }
+   ]
+  },
+  {
+   "id": "026",
+   "name": "",
+   "draws": 27,
+   "vsLines": 643,
+   "fsLines": 2151,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/street/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <aomap_fragment>', `#include <aomap_fragment> #ifdef USE_FOG { vec3 odVd = normal"
+    }
+   ]
+  },
+  {
+   "id": "027",
+   "name": "",
+   "draws": 27,
+   "vsLines": 644,
+   "fsLines": 2163,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/street/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.uniforms.odPavers = { value: pavers }; s.vertexShader = s.vertexShader .replace('#include <common>', '#include <common>\\nvarying vec3 v"
+    }
+   ]
+  },
+  {
+   "id": "028",
+   "name": "",
+   "draws": 27,
+   "vsLines": 643,
+   "fsLines": 2146,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/street/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "029",
+   "name": "",
+   "draws": 411,
+   "vsLines": 640,
+   "fsLines": 2144,
+   "users": 41,
+   "examples": [
+    {
+     "path": "Scene/street/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/street/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "030",
+   "name": "",
+   "draws": 27,
+   "vsLines": 564,
+   "fsLines": 551,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/street/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshBasicMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "031",
+   "name": "",
+   "draws": 27,
+   "vsLines": 642,
+   "fsLines": 2146,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/street/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "032",
+   "name": "",
+   "draws": 82,
+   "vsLines": 642,
+   "fsLines": 2147,
+   "users": 4,
+   "examples": [
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    }
+   ]
+  },
+  {
+   "id": "033",
+   "name": "",
+   "draws": 168,
+   "vsLines": 642,
+   "fsLines": 2147,
+   "users": 11,
+   "examples": [
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    }
+   ]
+  },
+  {
+   "id": "034",
+   "name": "",
+   "draws": 168,
+   "vsLines": 642,
+   "fsLines": 2148,
+   "users": 11,
+   "examples": [
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "035",
+   "name": "",
+   "draws": 168,
+   "vsLines": 642,
+   "fsLines": 2147,
+   "users": 11,
+   "examples": [
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "036",
+   "name": "",
+   "draws": 828,
+   "vsLines": 641,
+   "fsLines": 2145,
+   "users": 46,
+   "examples": [
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "037",
+   "name": "",
+   "draws": 195,
+   "vsLines": 565,
+   "fsLines": 550,
+   "users": 17,
+   "examples": [
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshBasicMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshBasicMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshBasicMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "038",
+   "name": "",
+   "draws": 54,
+   "vsLines": 641,
+   "fsLines": 2146,
+   "users": 8,
+   "examples": [
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    }
+   ]
+  },
+  {
+   "id": "039",
+   "name": "",
+   "draws": 27,
+   "vsLines": 641,
+   "fsLines": 2146,
+   "users": 4,
+   "examples": [
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    }
+   ]
+  },
+  {
+   "id": "040",
+   "name": "",
+   "draws": 27,
+   "vsLines": 640,
+   "fsLines": 2145,
+   "users": 4,
+   "examples": [
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "041",
+   "name": "",
+   "draws": 56,
+   "vsLines": 642,
+   "fsLines": 2145,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "042",
+   "name": "",
+   "draws": 56,
+   "vsLines": 641,
+   "fsLines": 2144,
+   "users": 7,
+   "examples": [
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "043",
+   "name": "",
+   "draws": 108,
+   "vsLines": 642,
+   "fsLines": 2147,
+   "users": 16,
+   "examples": [
+    {
+     "path": "Scene/Group/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Group/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Group/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "044",
+   "name": "",
+   "draws": 108,
+   "vsLines": 641,
+   "fsLines": 2146,
+   "users": 16,
+   "examples": [
+    {
+     "path": "Scene/Group/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    },
+    {
+     "path": "Scene/Group/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    },
+    {
+     "path": "Scene/Group/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    }
+   ]
+  },
+  {
+   "id": "045",
+   "name": "",
+   "draws": 86,
+   "vsLines": 642,
+   "fsLines": 2147,
+   "users": 7,
+   "examples": [
+    {
+     "path": "Scene/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <envmap_physical_pars_fragment>', THREE.ShaderChunk.envmap_physical_pars_fragment.repla"
+    }
+   ]
+  },
+  {
+   "id": "046",
+   "name": "",
+   "draws": 83,
+   "vsLines": 642,
+   "fsLines": 2382,
+   "users": 5,
+   "examples": [
+    {
+     "path": "Scene/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.uniforms.uDetail = { value: detailTex }; Object.assign(shader.uniforms, surf.uniforms); shader.vertexShader = shader.vertexShad"
+    },
+    {
+     "path": "Scene/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.uniforms.uDetail = { value: detailTex }; Object.assign(shader.uniforms, surf.uniforms); shader.vertexShader = shader.vertexShad"
+    },
+    {
+     "path": "Scene/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.uniforms.uDetail = { value: detailTex }; Object.assign(shader.uniforms, surf.uniforms); shader.vertexShader = shader.vertexShad"
+    }
+   ]
+  },
+  {
+   "id": "047",
+   "name": "Swash",
+   "draws": 27,
+   "vsLines": 87,
+   "fsLines": 456,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/swash",
+     "obj": "Mesh",
+     "mat": "ShaderMaterial",
+     "name": "Swash",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "048",
+   "name": "",
+   "draws": 1604,
+   "vsLines": 643,
+   "fsLines": 2146,
+   "users": 122,
+   "examples": [
+    {
+     "path": "Scene/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    },
+    {
+     "path": "Scene/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "049",
+   "name": "",
+   "draws": 56,
+   "vsLines": 645,
+   "fsLines": 2164,
+   "users": 4,
+   "examples": [
+    {
+     "path": "Scene/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.vertexShader = s.vertexShader .replace('#include <common>', '#include <common>\\nvarying vec3 vPw;\\nvarying vec3 vPn;') .replace('#inc"
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.vertexShader = s.vertexShader .replace('#include <common>', '#include <common>\\nvarying vec3 vPw;\\nvarying vec3 vPn;') .replace('#inc"
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.vertexShader = s.vertexShader .replace('#include <common>', '#include <common>\\nvarying vec3 vPw;\\nvarying vec3 vPn;') .replace('#inc"
+    }
+   ]
+  },
+  {
+   "id": "050",
+   "name": "",
+   "draws": 56,
+   "vsLines": 645,
+   "fsLines": 2164,
+   "users": 4,
+   "examples": [
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.vertexShader = s.vertexShader .replace('#include <common>', '#include <common>\\nvarying vec3 vPw;\\nvarying vec3 vPn;') .replace('#inc"
+    },
+    {
+     "path": "Scene/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.vertexShader = s.vertexShader .replace('#include <common>', '#include <common>\\nvarying vec3 vPw;\\nvarying vec3 vPn;') .replace('#inc"
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.vertexShader = s.vertexShader .replace('#include <common>', '#include <common>\\nvarying vec3 vPw;\\nvarying vec3 vPn;') .replace('#inc"
+    }
+   ]
+  },
+  {
+   "id": "051",
+   "name": "",
+   "draws": 29,
+   "vsLines": 642,
+   "fsLines": 2147,
+   "users": 3,
+   "examples": [
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <aomap_fragment>', `#include <aomap_fragment> // light bounced off the sunlit sand and "
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <aomap_fragment>', `#include <aomap_fragment> // light bounced off the sunlit sand and "
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.fragmentShader = s.fragmentShader.replace('#include <aomap_fragment>', `#include <aomap_fragment> // light bounced off the sunlit sand and "
+    }
+   ]
+  },
+  {
+   "id": "052",
+   "name": "",
+   "draws": 29,
+   "vsLines": 646,
+   "fsLines": 2146,
+   "users": 3,
+   "examples": [
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.uniforms.uFlagT = flagU; s.vertexShader = s.vertexShader.replace('#include <common>', '#include <common>\\nuniform float uFlagT;') .repl"
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.uniforms.uFlagT = flagU; s.vertexShader = s.vertexShader.replace('#include <common>', '#include <common>\\nuniform float uFlagT;') .repl"
+    },
+    {
+     "path": "Scene/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { s.uniforms.uFlagT = flagU; s.vertexShader = s.vertexShader.replace('#include <common>', '#include <common>\\nuniform float uFlagT;') .repl"
+    }
+   ]
+  },
+  {
+   "id": "053",
+   "name": "",
+   "draws": 1,
+   "vsLines": 643,
+   "fsLines": 2147,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "054",
+   "name": "Ocean",
+   "draws": 27,
+   "vsLines": 206,
+   "fsLines": 700,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/ocean",
+     "obj": "Mesh",
+     "mat": "ShaderMaterial",
+     "name": "Ocean",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "055",
+   "name": "",
+   "draws": 135,
+   "vsLines": 688,
+   "fsLines": 2157,
+   "users": 5,
+   "examples": [
+    {
+     "path": "Scene/birds",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(sh) => { Object.assign(sh.uniforms, uniforms); sh.vertexShader = RIG_VERT + `varying vec3 bCol; varying vec3 bColU; varying vec3 bFeather; varying floa"
+    },
+    {
+     "path": "Scene/birds",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(sh) => { Object.assign(sh.uniforms, uniforms); sh.vertexShader = RIG_VERT + `varying vec3 bCol; varying vec3 bColU; varying vec3 bFeather; varying floa"
+    },
+    {
+     "path": "Scene/birds",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(sh) => { Object.assign(sh.uniforms, uniforms); sh.vertexShader = RIG_VERT + `varying vec3 bCol; varying vec3 bColU; varying vec3 bFeather; varying floa"
+    }
+   ]
+  },
+  {
+   "id": "056",
+   "name": "",
+   "draws": 81,
+   "vsLines": 621,
+   "fsLines": 549,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "057",
+   "name": "",
+   "draws": 81,
+   "vsLines": 620,
+   "fsLines": 548,
+   "users": 3,
+   "examples": [
+    {
+     "path": "Scene/bird-shadows",
+     "obj": "Mesh",
+     "mat": "MeshBasicMaterial",
+     "name": "",
+     "patch": "(sh) => { Object.assign(sh.uniforms, uniforms); sh.vertexShader = RIG_VERT + `attribute vec4 aGround; uniform vec3 uSunDir; uniform float uBirdH; varyin"
+    },
+    {
+     "path": "Scene/bird-shadows",
+     "obj": "Mesh",
+     "mat": "MeshBasicMaterial",
+     "name": "",
+     "patch": "(sh) => { Object.assign(sh.uniforms, uniforms); sh.vertexShader = RIG_VERT + `attribute vec4 aGround; uniform vec3 uSunDir; uniform float uBirdH; varyin"
+    },
+    {
+     "path": "Scene/bird-shadows",
+     "obj": "Mesh",
+     "mat": "MeshBasicMaterial",
+     "name": "",
+     "patch": "(sh) => { Object.assign(sh.uniforms, uniforms); sh.vertexShader = RIG_VERT + `attribute vec4 aGround; uniform vec3 uSunDir; uniform float uBirdH; varyin"
+    }
+   ]
+  },
+  {
+   "id": "058",
+   "name": "",
+   "draws": 81,
+   "vsLines": 646,
+   "fsLines": 2150,
+   "users": 5,
+   "examples": [
+    {
+     "path": "Scene/SkinnedMesh",
+     "obj": "SkinnedMesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": "(sh) => { sh.vertexShader = sh.vertexShader .replace('#include <common>', '#include <common>\\nattribute vec3 aMat;\\nvarying vec3 vPMat;') .repla"
+    },
+    {
+     "path": "Scene/SkinnedMesh",
+     "obj": "SkinnedMesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": "(sh) => { sh.vertexShader = sh.vertexShader .replace('#include <common>', '#include <common>\\nattribute vec3 aMat;\\nvarying vec3 vPMat;') .repla"
+    },
+    {
+     "path": "Scene/SkinnedMesh",
+     "obj": "SkinnedMesh",
+     "mat": "MeshPhysicalMaterial",
+     "name": "",
+     "patch": "(sh) => { sh.vertexShader = sh.vertexShader .replace('#include <common>', '#include <common>\\nattribute vec3 aMat;\\nvarying vec3 vPMat;') .repla"
+    }
+   ]
+  },
+  {
+   "id": "059",
+   "name": "",
+   "draws": 81,
+   "vsLines": 685,
+   "fsLines": 2202,
+   "users": 5,
+   "examples": [
+    {
+     "path": "Scene/SkinnedMesh",
+     "obj": "SkinnedMesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(sh) => { Object.assign(sh.uniforms, SH_SHARED, per); sh.vertexShader = sh.vertexShader .replace('#include <common>', `#include <common>\\n${decl} "
+    },
+    {
+     "path": "Scene/SkinnedMesh",
+     "obj": "SkinnedMesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(sh) => { Object.assign(sh.uniforms, SH_SHARED, per); sh.vertexShader = sh.vertexShader .replace('#include <common>', `#include <common>\\n${decl} "
+    },
+    {
+     "path": "Scene/SkinnedMesh",
+     "obj": "SkinnedMesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(sh) => { Object.assign(sh.uniforms, SH_SHARED, per); sh.vertexShader = sh.vertexShader .replace('#include <common>', `#include <common>\\n${decl} "
+    }
+   ]
+  },
+  {
+   "id": "060",
+   "name": "",
+   "draws": 0,
+   "vsLines": 644,
+   "fsLines": 2155,
+   "users": 14,
+   "examples": [
+    {
+     "path": "Scene/Group/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { Object.assign(s.uniforms, u); s.vertexShader = s.vertexShader .replace('#include <common>', '#include <common>\\nattribute vec3 aMRE;\\nvar"
+    },
+    {
+     "path": "Scene/Group/Group/Object3D/Group/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { Object.assign(s.uniforms, u); s.vertexShader = s.vertexShader .replace('#include <common>', '#include <common>\\nattribute vec3 aMRE;\\nvar"
+    },
+    {
+     "path": "Scene/Group/Group/Object3D/Group/Object3D/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshStandardMaterial",
+     "name": "",
+     "patch": "(s) => { Object.assign(s.uniforms, u); s.vertexShader = s.vertexShader .replace('#include <common>', '#include <common>\\nattribute vec3 aMRE;\\nvar"
+    }
+   ]
+  },
+  {
+   "id": "061",
+   "name": "",
+   "draws": 27,
+   "vsLines": 79,
+   "fsLines": 65,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/Points",
+     "obj": "Points",
+     "mat": "ShaderMaterial",
+     "name": "",
+     "patch": ""
+    }
+   ]
+  },
+  {
+   "id": "062",
+   "name": "",
+   "draws": 32,
+   "vsLines": 561,
+   "fsLines": 547,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "063",
+   "name": "",
+   "draws": 2,
+   "vsLines": 471,
+   "fsLines": 407,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "064",
+   "name": "",
+   "draws": 99,
+   "vsLines": 472,
+   "fsLines": 408,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "065",
+   "name": "",
+   "draws": 264,
+   "vsLines": 472,
+   "fsLines": 408,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "066",
+   "name": "",
+   "draws": 28,
+   "vsLines": 472,
+   "fsLines": 409,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "067",
+   "name": "",
+   "draws": 18,
+   "vsLines": 474,
+   "fsLines": 410,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "068",
+   "name": "",
+   "draws": 0,
+   "vsLines": 474,
+   "fsLines": 409,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "069",
+   "name": "",
+   "draws": 0,
+   "vsLines": 475,
+   "fsLines": 436,
+   "users": 1,
+   "examples": [
+    {
+     "path": "Scene/palms/Mesh",
+     "obj": "Mesh",
+     "mat": "MeshDepthMaterial",
+     "name": "",
+     "patch": "(shader) => { shader.fragmentShader = shader.fragmentShader .replace('#include <common>', `#include <common>\\n${FROND_TEX_GLSL}`) .replace('#inc"
+    }
+   ]
+  },
+  {
+   "id": "070",
+   "name": "",
+   "draws": 2,
+   "vsLines": 472,
+   "fsLines": 409,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "071",
+   "name": "",
+   "draws": 153,
+   "vsLines": 471,
+   "fsLines": 407,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "072",
+   "name": "",
+   "draws": 22,
+   "vsLines": 470,
+   "fsLines": 407,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "073",
+   "name": "",
+   "draws": 26,
+   "vsLines": 78,
+   "fsLines": 79,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "074",
+   "name": "",
+   "draws": 52,
+   "vsLines": 78,
+   "fsLines": 157,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "075",
+   "name": "",
+   "draws": 52,
+   "vsLines": 78,
+   "fsLines": 157,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "076",
+   "name": "",
+   "draws": 52,
+   "vsLines": 78,
+   "fsLines": 157,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "077",
+   "name": "",
+   "draws": 52,
+   "vsLines": 78,
+   "fsLines": 157,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "078",
+   "name": "",
+   "draws": 52,
+   "vsLines": 78,
+   "fsLines": 157,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "079",
+   "name": "",
+   "draws": 26,
+   "vsLines": 78,
+   "fsLines": 93,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "080",
+   "name": "",
+   "draws": 26,
+   "vsLines": 77,
+   "fsLines": 71,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "081",
+   "name": "CameraGrade",
+   "draws": 26,
+   "vsLines": 70,
+   "fsLines": 101,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "082",
+   "name": "OutputShader",
+   "draws": 26,
+   "vsLines": 21,
+   "fsLines": 165,
+   "users": 0,
+   "examples": []
+  },
+  {
+   "id": "083",
+   "name": "CameraFinish",
+   "draws": 26,
+   "vsLines": 70,
+   "fsLines": 177,
+   "users": 0,
+   "examples": []
+  }
+ ]
+}

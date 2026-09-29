@@ -1,0 +1,10 @@
+# PMREMGenerator._getGGXShader(lodMax 8, 768, 1024): GGX prefilter between cube-UV LODs
+name pmrem_ggx
+vertex custom/pmrem_common.vert
+fragment custom/pmrem_ggx.frag
+param shaderType ShaderMaterial
+param shaderName PMREMGGXConvolution
+define GGX_SAMPLES 256
+define CUBEUV_TEXEL_WIDTH 0.0013020833333333333
+define CUBEUV_TEXEL_HEIGHT 0.0009765625
+define CUBEUV_MAX_MIP 8.0

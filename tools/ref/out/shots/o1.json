@@ -1,0 +1,48 @@
+{
+ "w": 1024,
+ "h": 576,
+ "keep": "beach,ocean",
+ "camera": {
+  "p": [
+   70,
+   1.5,
+   10
+  ],
+  "q": [
+   -0.02467767077833599,
+   -0.7066760308408344,
+   -0.024677670778335988,
+   0.7066760308408345
+  ],
+  "fov": 50,
+  "aspect": 1.7777777777777777,
+  "near": 0.1,
+  "far": 30000
+ },
+ "canvas": {
+  "w": 1024,
+  "h": 576,
+  "cssW": 1024,
+  "cssH": 576,
+  "dyn": {
+   "scale": 1,
+   "pixelRatio": 1,
+   "on": false
+  },
+  "maxSamples": 8,
+  "attrs": {
+   "alpha": true,
+   "antialias": false,
+   "depth": true,
+   "desynchronized": false,
+   "failIfMajorPerformanceCaveat": false,
+   "powerPreference": "high-performance",
+   "premultipliedAlpha": true,
+   "preserveDrawingBuffer": false,
+   "stencil": false,
+   "xrCompatible": false
+  },
+  "gpu": "ANGLE (AMD, Vulkan 1.4.328 (AMD Radeon 680M (RADV REMBRANDT) (0x00001681)), radv)"
+ },
+ "errors": []
+}

@@ -1,0 +1,10 @@
+# sky.js makeSkyMaterial(1): the skylight environment rendered into the PMREM (no lights in
+# that scene, so no shadow map defines)
+name sky_env
+vertex custom/sky1.vert
+fragment custom/sky1.frag
+param shaderType ShaderMaterial
+param shaderName SkyEnv
+param vertexNormals
+param flipSided
+param opaque

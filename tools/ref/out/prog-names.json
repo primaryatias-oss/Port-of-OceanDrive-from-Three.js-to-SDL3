@@ -1,0 +1,342 @@
+[
+ {
+  "name": "grass_translucent",
+  "pid": 4,
+  "mats": 1
+ },
+ {
+  "name": "std_map",
+  "pid": 5,
+  "mats": 7
+ },
+ {
+  "name": "coral_wall",
+  "pid": 6,
+  "mats": 1
+ },
+ {
+  "name": "bg_towers",
+  "pid": 7,
+  "mats": 1
+ },
+ {
+  "name": "hotel_glass",
+  "pid": 8,
+  "mats": 1
+ },
+ {
+  "name": "hotel_reveal",
+  "pid": 9,
+  "mats": 1
+ },
+ {
+  "name": "hotel_reveal_round",
+  "pid": 10,
+  "mats": 1
+ },
+ {
+  "name": "hotel_paint",
+  "pid": 11,
+  "mats": 1
+ },
+ {
+  "name": "std_map_atest_a2c_dbl_emap_transp",
+  "pid": 12,
+  "mats": 2
+ },
+ {
+  "name": "std_vcol",
+  "pid": 13,
+  "mats": 4
+ },
+ {
+  "name": "sign_shadow",
+  "pid": 14,
+  "mats": 2
+ },
+ {
+  "name": "hotel_grime",
+  "pid": 15,
+  "mats": 1
+ },
+ {
+  "name": "hotel_fabric",
+  "pid": 16,
+  "mats": 1
+ },
+ {
+  "name": "std_inst_icol",
+  "pid": 17,
+  "mats": 4
+ },
+ {
+  "name": "hotel_umbrella",
+  "pid": 18,
+  "mats": 1
+ },
+ {
+  "name": "std_map_inst_icol_atest_dbl",
+  "pid": 19,
+  "mats": 1
+ },
+ {
+  "name": "hotel_potpalm",
+  "pid": 20,
+  "mats": 1
+ },
+ {
+  "name": "std_inst",
+  "pid": 21,
+  "mats": 1
+ },
+ {
+  "name": "palm_trunk",
+  "pid": 22,
+  "mats": 1
+ },
+ {
+  "name": "palm_frond",
+  "pid": 23,
+  "mats": 1
+ },
+ {
+  "name": "palm_frond_depth",
+  "pid": 69,
+  "mats": 1
+ },
+ {
+  "name": "palm_ground",
+  "pid": 24,
+  "mats": 1
+ },
+ {
+  "name": "street_asphalt",
+  "pid": 25,
+  "mats": 1
+ },
+ {
+  "name": "street_paint",
+  "pid": 26,
+  "mats": 1
+ },
+ {
+  "name": "street_sidewalk",
+  "pid": 27,
+  "mats": 1
+ },
+ {
+  "name": "std_map_vcol",
+  "pid": 28,
+  "mats": 1
+ },
+ {
+  "name": "std",
+  "pid": 29,
+  "mats": 8
+ },
+ {
+  "name": "basic_vcol",
+  "pid": 30,
+  "mats": 1
+ },
+ {
+  "name": "std_map_atest",
+  "pid": 31,
+  "mats": 1
+ },
+ {
+  "name": "car_refl_sedan0",
+  "pid": 32,
+  "mats": 4
+ },
+ {
+  "name": "car_refl_modern_glass0",
+  "pid": 33,
+  "mats": 1
+ },
+ {
+  "name": "car_clamp_modern_lens",
+  "pid": 34,
+  "mats": 1
+ },
+ {
+  "name": "phys_dbl_cc",
+  "pid": 35,
+  "mats": 1
+ },
+ {
+  "name": "std_dbl",
+  "pid": 36,
+  "mats": 2
+ },
+ {
+  "name": "basic_map_transp",
+  "pid": 37,
+  "mats": 2
+ },
+ {
+  "name": "car_refl_paint0",
+  "pid": 38,
+  "mats": 4
+ },
+ {
+  "name": "car_refl_chrome3",
+  "pid": 39,
+  "mats": 1
+ },
+ {
+  "name": "car_clamp_lens",
+  "pid": 40,
+  "mats": 1
+ },
+ {
+  "name": "phys_transp",
+  "pid": 42,
+  "mats": 4
+ },
+ {
+  "name": "phys_transp_back",
+  "pid": null,
+  "mats": 4
+ },
+ {
+  "name": "car_clamp_rubber",
+  "pid": 43,
+  "mats": 1
+ },
+ {
+  "name": "car_refl_hub3",
+  "pid": 44,
+  "mats": 1
+ },
+ {
+  "name": "car_refl_fleet0",
+  "pid": 45,
+  "mats": 7
+ },
+ {
+  "name": "beach_sand",
+  "pid": 46,
+  "mats": 1
+ },
+ {
+  "name": "swash",
+  "pid": 47,
+  "mats": 1
+ },
+ {
+  "name": "std_vcol_inst_dbl",
+  "pid": 48,
+  "mats": 4
+ },
+ {
+  "name": "beach_painted_v2_0",
+  "pid": 49,
+  "mats": 4
+ },
+ {
+  "name": "beach_painted_v2_1",
+  "pid": 50,
+  "mats": 4
+ },
+ {
+  "name": "tower_soffit",
+  "pid": 51,
+  "mats": 3
+ },
+ {
+  "name": "tower_flag",
+  "pid": 52,
+  "mats": 3
+ },
+ {
+  "name": "std_atest_dbl",
+  "pid": 53,
+  "mats": 1
+ },
+ {
+  "name": "ocean",
+  "pid": 54,
+  "mats": 1
+ },
+ {
+  "name": "od_bird_lit",
+  "pid": 55,
+  "mats": 5
+ },
+ {
+  "name": "od_bird_shadow",
+  "pid": 57,
+  "mats": 3
+ },
+ {
+  "name": "od_bird_shadow_back",
+  "pid": null,
+  "mats": 3
+ },
+ {
+  "name": "people_body",
+  "pid": 58,
+  "mats": 1
+ },
+ {
+  "name": "people_shadow",
+  "pid": 59,
+  "mats": 5
+ },
+ {
+  "name": "vehicle_mre",
+  "pid": 60,
+  "mats": 2
+ },
+ {
+  "name": "shader",
+  "pid": 61,
+  "mats": 1
+ },
+ {
+  "name": "depth_map_front",
+  "pid": 63,
+  "mats": 0
+ },
+ {
+  "name": "depth_inst_icol_back",
+  "pid": 64,
+  "mats": 0
+ },
+ {
+  "name": "depth_map_back",
+  "pid": 65,
+  "mats": 0
+ },
+ {
+  "name": "depth_map_atest_dbl",
+  "pid": 66,
+  "mats": 0
+ },
+ {
+  "name": "depth_inst_icol_map_atest_dbl",
+  "pid": 67,
+  "mats": 0
+ },
+ {
+  "name": "depth_batch_map_back",
+  "pid": 68,
+  "mats": 0
+ },
+ {
+  "name": "depth_map_atest_back",
+  "pid": 70,
+  "mats": 0
+ },
+ {
+  "name": "depth_inst_dbl",
+  "pid": 71,
+  "mats": 0
+ },
+ {
+  "name": "depth_back",
+  "pid": 72,
+  "mats": 0
+ }
+]

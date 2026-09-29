@@ -1,0 +1,9 @@
+# UnrealBloomPass composite of the five blur mips
+tiers high medium ultra
+name post_composite
+vertex custom/bloom_composite.vert
+fragment custom/bloom_composite.frag
+param shaderType ShaderMaterial
+param shaderName
+define NUM_MIPS 5
+param opaque

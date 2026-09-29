@@ -1,0 +1,13 @@
+# post.js FinishShader (ShaderPass): S-curve, vignette, dither. The last pass renders to the
+# canvas, so three adds the tone-mapping / sRGB-output prefix (unused by this shader) - except
+# on the low tier, where FXAA comes after it.
+name post_finish
+vertex custom/finish.vert
+fragment custom/finish.frag
+param shaderType ShaderMaterial
+param shaderName CameraFinish
+param opaque
+@if high medium ultra
+param toneMapping ACESFilmic
+param outputColorSpace srgb
+@endif

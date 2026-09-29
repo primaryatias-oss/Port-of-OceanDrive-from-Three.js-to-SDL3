@@ -1,0 +1,9 @@
+# OutputPass (RawShaderMaterial): ACES filmic tone mapping + sRGB transfer
+name post_output
+vertex custom/output.vert
+fragment custom/output.frag
+param isRawShaderMaterial
+param shaderType RawShaderMaterial
+param shaderName OutputShader
+define SRGB_TRANSFER
+define ACES_FILMIC_TONE_MAPPING

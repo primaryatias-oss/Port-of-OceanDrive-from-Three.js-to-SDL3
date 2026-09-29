@@ -1,0 +1,9 @@
+# UnrealBloomPass separable blur, KERNEL_PAIRS = 7
+tiers high medium ultra
+name post_blur7
+vertex custom/bloom_blur.vert
+fragment custom/bloom_blur.frag
+param shaderType ShaderMaterial
+param shaderName
+define KERNEL_PAIRS 7
+param opaque

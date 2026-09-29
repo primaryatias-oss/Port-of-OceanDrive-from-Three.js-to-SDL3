@@ -1,0 +1,7 @@
+# post.js GradeShader (ShaderPass): veiling glare, split tone, saturation (linear HDR)
+name post_grade
+vertex custom/grade.vert
+fragment custom/grade.frag
+param shaderType ShaderMaterial
+param shaderName CameraGrade
+param opaque

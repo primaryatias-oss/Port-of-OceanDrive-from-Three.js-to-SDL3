@@ -1,0 +1,8 @@
+# UnrealBloomPass blendMaterial: CopyShader, AdditiveBlending, premultipliedAlpha, transparent
+tiers high medium ultra
+name post_blend
+vertex custom/copy.vert
+fragment custom/copy.frag
+param shaderType ShaderMaterial
+param shaderName
+param premultipliedAlpha

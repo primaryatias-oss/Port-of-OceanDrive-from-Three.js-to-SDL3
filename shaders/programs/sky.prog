@@ -1,0 +1,10 @@
+# sky.js makeSkyMaterial(0): the visible sky dome (ShaderMaterial, BackSide, fog: false)
+name sky
+vertex custom/sky0.vert
+fragment custom/sky0.frag
+param shaderType ShaderMaterial
+param shaderName Sky
+param vertexNormals
+param flipSided
+param shadowMapEnabled
+param opaque

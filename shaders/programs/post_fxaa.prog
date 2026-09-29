@@ -1,0 +1,10 @@
+# FXAAShader (ShaderPass), low tier only: the last pass, rendered to the canvas
+tiers low
+name post_fxaa
+vertex custom/fxaa.vert
+fragment custom/fxaa.frag
+param shaderType ShaderMaterial
+param shaderName FXAAShader
+param opaque
+param toneMapping ACESFilmic
+param outputColorSpace srgb

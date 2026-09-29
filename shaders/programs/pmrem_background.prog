@@ -1,0 +1,9 @@
+# PMREMGenerator._sceneToCubeUV: the background box (MeshBasicMaterial, BackSide) drawn in
+# each cube face before the environment scene
+name pmrem_background
+lib basic
+param shaderType MeshBasicMaterial
+param shaderName PMREM.Background
+param vertexNormals
+param flipSided
+param opaque

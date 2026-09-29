@@ -1,0 +1,16 @@
+# MeshDepthMaterial (WebGLShadowMap caster variant) - HAND-DERIVED, no capture: the browser run
+# never compiled it (no such caster inside its shadow frustum). It is depth_inst_icol_back with
+# the depth material's side FrontSide (a BackSide caster, e.g. the hotels' round window reveals),
+# i.e. without flipSided; three's parameters are otherwise identical.
+name depth_inst_icol_front
+lib depth
+param shaderType MeshDepthMaterial
+param shaderName
+param instancing
+param instancingColor
+param vertexNormals
+param shadowMapEnabled
+param shadowMapTypeDefine SHADOWMAP_TYPE_PCF
+param opaque
+param useDepthPacking
+param depthPacking 3200

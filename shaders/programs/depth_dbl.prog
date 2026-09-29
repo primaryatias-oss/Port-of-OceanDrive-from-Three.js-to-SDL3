@@ -1,0 +1,15 @@
+# MeshDepthMaterial (WebGLShadowMap caster variant) - HAND-DERIVED, no capture: the browser run
+# never compiled it (no such caster inside its shadow frustum). It is depth_back with the depth
+# material's side DoubleSide (a DoubleSide caster without a map, e.g. the cars' chrome and tinted
+# glass), i.e. doubleSided instead of flipSided; three's parameters are otherwise identical.
+name depth_dbl
+lib depth
+param shaderType MeshDepthMaterial
+param shaderName
+param vertexNormals
+param doubleSided
+param shadowMapEnabled
+param shadowMapTypeDefine SHADOWMAP_TYPE_PCF
+param opaque
+param useDepthPacking
+param depthPacking 3200
